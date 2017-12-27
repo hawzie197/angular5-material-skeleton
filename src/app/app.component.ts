@@ -5,6 +5,21 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'app';
+
+  answer: string = '';
+  answerDisplay: string = '';
+  showSpinner: boolean = false;
+  showFiller = false;
+
+  showAnswer() {
+    this.showSpinner = true;
+
+    setTimeout(() => {
+      this.answerDisplay = this.answer;
+      this.showSpinner = false;
+    }, 2000);
+  }
+
 }
