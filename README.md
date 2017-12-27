@@ -18,10 +18,11 @@ nvm --version
 
 Install nvm (WINDOWS):
 
-
+```
 - https://github.com/coreybutler/nvm-windows/releases
 - close terminal and reopen
 - `nvm --version`
+```
 
 Install node and npm (with nvm):
 
