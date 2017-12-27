@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from '../core/shared.module';
 import { ContentComponent } from './content/content.component';
 import { MainComponent } from './main.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
 
@@ -13,7 +14,8 @@ import { MainComponent } from './main.component';
 
   declarations: [
     MainComponent,
-    ContentComponent
+    ContentComponent,
+    NavbarComponent
   ],
 
   exports: [
