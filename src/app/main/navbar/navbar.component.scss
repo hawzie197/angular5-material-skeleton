@@ -10,6 +10,12 @@
 
   .mat-toolbar {
     position: relative;
+
+    .toggle {
+      min-width: 56px;
+      width: auto;
+      height: 100%;
+    }
   }
 
   .spacer {

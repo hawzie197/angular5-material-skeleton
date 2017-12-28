@@ -1,11 +1,42 @@
 <mat-toolbar color="primary" class="p-0 mat-elevation-z2">
   <mat-toolbar-row>
-    <span>LOGO</span>
 
-    <span class="spacer"></span>
+      <button mat-button class="toggle" type="button" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
 
-    <button mat-button>About</button>
-    <button mat-button>Services</button>
-    <button mat-button>Contact</button>
-  </mat-toolbar-row>
+      <!-- Logo -->
+      <div class="logo">
+        <span>LOGO</span>
+      </div>
+      <!-- / Logo -->
+
+      <span class="spacer"></span>
+
+      <!-- Menu 1 -->
+      <button mat-button [matMenuTriggerFor]="userMenu" class="toggle">Menu 1</button>
+      <mat-menu #userMenu="matMenu">
+          <button mat-menu-item>
+              <mat-icon>account_circle</mat-icon>
+              <span>My Profile</span>
+          </button>
+
+          <button mat-menu-item class="">
+              <mat-icon>mail</mat-icon>
+              <span>Inbox</span>
+          </button>
+
+          <button mat-menu-item class="">
+              <mat-icon>exit_to_app</mat-icon>
+              <span>Logout</span>
+          </button>
+      </mat-menu>
+      <!-- / Menu 1 -->
+
+      <!-- Pop-out -->
+      <button mat-button class="toggle"><mat-icon>list</mat-icon></button>
+      <!-- / Pop-out -->
+
+    </mat-toolbar-row>
 </mat-toolbar>
+

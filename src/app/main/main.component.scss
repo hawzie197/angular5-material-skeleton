@@ -1,7 +1,39 @@
-app-main {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
+@import "../internals/scss/_padding";
 
+app-main {
+  position: relative;
+  display: flex;
+  z-index: 4;
 }
+
+:host {
+  flex: 1;
+
+  .sidenav-content {
+    display: flex;
+    height: 92vh;
+  }
+
+  .sidenav-options {
+    min-width: 250px;
+  }
+
+  &.below {
+    z-index: 2;
+  }
+
+  .mat-toolbar {
+    position: relative;
+
+    .toggle {
+      min-width: 56px;
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}
+

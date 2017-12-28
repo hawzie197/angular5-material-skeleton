@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { AdminComponent } from './admin.component';
 import { RouterModule } from "@angular/router";
-import { SharedModule } from "../../../core/shared.module";
+import { SharedModule } from "../../../internals/shared.module";
 
 const routes = [
     {

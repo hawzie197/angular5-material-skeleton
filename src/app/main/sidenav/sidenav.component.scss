@@ -1,0 +1,19 @@
+:host {
+  flex: 1;
+
+  .sizenav-ontainer{
+    width: 500px;
+    height: 100%;
+  }
+
+  .sidenav-content{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sidenav {
+    padding: 20px;
+  }
+}

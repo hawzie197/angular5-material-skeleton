@@ -2,16 +2,80 @@
 
   <div id="content">
 
+    <!-- Navbar -->
     <ng-container>
-      <app-navbar></app-navbar>
+     <mat-toolbar color="primary" class="p-0 mat-elevation-z3">
+        <mat-toolbar-row>
+
+            <button mat-button class="toggle" type="button" (click)="drawer.toggle()">
+              <mat-icon>menu</mat-icon>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+              <span>LOGO</span>
+            </div>
+            <!-- / Logo -->
+
+            <span class="spacer"></span>
+
+            <!-- Menu 1 -->
+            <button mat-button [matMenuTriggerFor]="userMenu" class="toggle">Menu 1</button>
+            <mat-menu #userMenu="matMenu">
+                <button mat-menu-item class="">
+                    <mat-icon>report</mat-icon>
+                    <span>Option 1</span>
+                </button>
+                <button mat-menu-item class="">
+                    <mat-icon>report</mat-icon>
+                    <span>Option 2</span>
+                </button>
+            </mat-menu>
+            <!-- / Menu 1 -->
+
+            <!-- Pop-out -->
+            <button mat-button class="toggle"><mat-icon>list</mat-icon></button>
+            <!-- / Pop-out -->
+
+          </mat-toolbar-row>
+      </mat-toolbar>
     </ng-container>
+    <!-- / Navbar -->
 
 
+    <!-- Progress Bar -->
     <ng-container>
-      <app-content></app-content>
+       <mat-progress-bar *ngIf="showProgressBar" color="primary" mode="indeterminate"></mat-progress-bar>
     </ng-container>
+    <!-- / Progress Bar -->
 
-  </div>
 
+    <!-- Sidenav -->
+    <app-sidenav></app-sidenav>
+    <!-- / Sidenav -->
+
+
+    <div id="sidenav">
+      <mat-drawer-container autosize>
+
+          <mat-drawer #drawer class="sidenav mat-elevation-z3" mode="side">
+            <mat-nav-list class="sidenav-options">
+              <mat-list-item>
+                option 1
+              </mat-list-item>
+            </mat-nav-list>
+          </mat-drawer>
+
+           <!-- Content -->
+          <ng-container>
+            <app-content class="sidenav-content"></app-content>
+          </ng-container>
+          <!-- / Content -->
+
+      </mat-drawer-container>
+    </div>
+
+
+  </div> <!-- end content -->
 </mat-sidenav-container>
 
