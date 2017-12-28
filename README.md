@@ -1,5 +1,6 @@
 # Notice
-This repo is under rapid development and the skeleton will be updated a couple times a week until 2/1/2018
+This repo is under rapid development and the skeleton will be updated a couple times a week until 2/1/2018.
+If you would like to contribute to this skeleton, please create a pull request or email me at mhawes24@gmail.com. Thanks!
 Great things are coming!
 
 Next steps:
