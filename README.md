@@ -1,4 +1,14 @@
-# Static
+# Notice
+This repo is under rapid development and the skeleton will be updated a couple times a week until 2/1/2018
+Great things are coming!
+
+Next steps:
+- Make the sidenav into a model driven one
+- Complete the top navbar
+- Make it mobile friendly and responsive
+- Add in search bar
+- Add in notifications popout
+- Add in more prebuilt scss styles
 
 ## Requirements
 
@@ -21,7 +31,7 @@ Install nvm (WINDOWS):
 ```
 - https://github.com/coreybutler/nvm-windows/releases
 - close terminal and reopen
-- `nvm --version`
+- nvm --version
 ```
 
 Install node and npm (with nvm):
@@ -57,7 +67,7 @@ VIRTUALENV WINDOWS:
 ```
 virtualenv env
 cd env/Scripts
-activate
+./activate
 ```
 
 ## Setup
@@ -71,19 +81,13 @@ cd [Directory Name]
 git clone https://github.com/hawzie197/angular5-material-skeleton.git
 ```
 
-2. create virtual environment in [Directory Name] (see below for mac vs windows), and from within :
-
-```
-pip install -r requirements.txt
-python manage.py runserver
-```
-
-3. open second terminal, and issue:
+2. create virtual environment in [Directory Name] (see above for mac vs windows), and from within :
 
 ```
 cd angular5-material-skeleton
 ng serve
 ```
+
 
 
 ## Development server

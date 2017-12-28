@@ -4,14 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainModule } from "./main/main.module";
-import { SharedModule } from "./core/shared.module";
+import { SharedModule } from "./internals/shared.module";
+import { AdminModule } from "./main/content/admin/admin.module";
 import 'hammerjs';
 
-import { AdminModule } from "./main/content/admin/admin.module";
-
-const appRoutes: Routes = [
+const routes: Routes = [
     {
         path      : '**',
         redirectTo: 'admin'
@@ -26,7 +24,7 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(routes),
     SharedModule,
     MainModule,
     AdminModule
