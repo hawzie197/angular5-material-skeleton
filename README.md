@@ -10,7 +10,7 @@ Next steps:
 - Add in notifications popout
 - Add in more prebuilt scss styles
 
-Current Look:
+Current Look (With sidenav.toggle() = true):
 ![Screenshot](screenshot.png)
 
 ## Requirements
