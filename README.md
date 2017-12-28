@@ -10,6 +10,9 @@ Next steps:
 - Add in notifications popout
 - Add in more prebuilt scss styles
 
+Current Look:
+![Screenshot](screenshot.png)
+
 ## Requirements
 
 - nvm (node version manager)
